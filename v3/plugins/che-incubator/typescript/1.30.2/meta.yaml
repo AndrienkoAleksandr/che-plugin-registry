@@ -12,6 +12,6 @@ category: Language
 firstPublicationDate: "2019-02-19"
 spec:
   containers:
-   - image: "eclipse/che-theia-endpoint-runtime:next"
+   - image: "aandrienko/che-theia-remote:next"
   extensions:
    - https://github.com/che-incubator/ms-code.typescript/releases/download/v1.30.2/che-typescript-language.vsix
