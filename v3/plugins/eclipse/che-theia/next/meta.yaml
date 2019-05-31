@@ -48,7 +48,7 @@ spec:
         discoverable: false
   containers:
    - name: theia-ide
-     image: aandrienko/che-theia:singleQuotes
+     image: aandrienko/che-theia:remoteBinary
      env:
          - name: THEIA_PLUGINS
            value: local-dir:///plugins
