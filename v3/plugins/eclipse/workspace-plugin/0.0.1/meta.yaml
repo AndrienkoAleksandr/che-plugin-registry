@@ -1,0 +1,18 @@
+apiVersion: v2
+publisher: eclipse
+name: che-workspace-plugin
+version: 0.0.1
+type: Theia plugin
+displayName: Simple Eclipse CHE workspace plugin
+title: Simple workspace plugin for Eclipse CHE
+description: Simple workspace plugin for Eclipse CHE
+icon: https://www.eclipse.org/che/images/logo-eclipseche.svg
+repository: https://www.eclipse.org/che/images/logo-eclipseche.svg
+category: Tools
+firstPublicationDate: "2019-04-19"
+spec:
+  extensions:
+    - https://github.com/AndrienkoAleksandr/che-workspace-plugin/releases/download/0.0.1/che_workspace_plugin.theia
+  containers:
+   - name: workspace-plugin
+     image: aandrienko/che-theia-remote:next
