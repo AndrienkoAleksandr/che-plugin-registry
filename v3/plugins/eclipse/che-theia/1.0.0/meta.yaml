@@ -30,7 +30,7 @@ spec:
         discoverable: false
   containers:
    - name: theia-ide
-     image: eclipse/che-theia:nightly
+     image: eclipse/che-theia:0.5.0
      env:
          - name: THEIA_PLUGINS
            value: local-dir:///plugins
