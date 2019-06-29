@@ -15,4 +15,4 @@ spec:
     - https://github.com/AndrienkoAleksandr/che-workspace-plugin/releases/download/0.0.1/che_workspace_plugin.theia
   containers:
    - name: workspace-plugin
-     image: aandrienko/che-theia-endpoint-runtime-binary-dev:next
+     image: aandrienko/che-theia-endpoint-runtime-binary-dev:crt
