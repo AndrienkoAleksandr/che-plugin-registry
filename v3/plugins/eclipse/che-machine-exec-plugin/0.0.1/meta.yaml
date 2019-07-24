@@ -18,7 +18,6 @@ spec:
       attributes:
         protocol: ws
         secure: true
-        cookiesAuthEnabled: true
         type: terminal
         discoverable: false
 
