@@ -24,6 +24,6 @@ spec:
 
   containers:
    - name: che-machine-exec
-     image: aandrienko/che-machine-exec:singleQuotes
+     image: eclipse/che-machine-exec:latest
      ports:
        - exposedPort: 4444
