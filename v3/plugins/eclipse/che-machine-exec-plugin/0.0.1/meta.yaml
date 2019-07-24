@@ -15,11 +15,12 @@ spec:
   endpoints:
    -  name: "che-machine-exec"
       targetPort: 4444
+      public: true
       attributes:
         protocol: ws
         type: terminal
         discoverable: false
-
+        secure: true
   containers:
    - name: che-machine-exec
      image: eclipse/che-machine-exec:latest
