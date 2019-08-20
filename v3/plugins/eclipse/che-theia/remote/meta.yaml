@@ -55,7 +55,7 @@ spec:
      pluginContainerCommand: ['sh', '-c']
      pluginContainerArgs: ['/plugins/remote-launcher/entrypoint.sh']
      volumes:
-         - mountPath: "plugins"
+         - mountPath: "/plugins"
            name: plugins
    - name: theia-ide
      image: aandrienko/che-theia:next     
