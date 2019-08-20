@@ -54,6 +54,9 @@ spec:
      args: ['cp', '/remote-plugin-launcher', '/plugins/remote-launcher']
      pluginContainerCommand: ['sh', '-c']
      pluginContainerArgs: ['/plugins/remote-launcher']
+     volumes:
+         - mountPath: "plugins"
+           name: plugins
    - name: theia-ide
      image: aandrienko/che-theia:next     
      env:
