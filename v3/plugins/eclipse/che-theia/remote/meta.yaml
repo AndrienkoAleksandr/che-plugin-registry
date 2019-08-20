@@ -53,7 +53,7 @@ spec:
      command: ['sh', '-c']
      args: ['cp', '/remote-plugin-launcher', '/plugins/remote-launcher']
      pluginContainerCommand: ['sh', '-c']
-     pluginContainerArgs: ['/plugins/remote-launcher']
+     pluginContainerArgs: ['/plugins/remote-launcher/entrypoint.sh']
      volumes:
          - mountPath: "plugins"
            name: plugins
