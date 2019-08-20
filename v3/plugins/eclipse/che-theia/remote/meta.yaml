@@ -50,8 +50,8 @@ spec:
    - name: theia-remote-plugin-laucher
      image: aandrienko/che-theia-endpoint-runtime:next
      initContainer: true
-     command: ['sh', '-c']
-     args: ['cp', '-rf', '/remote-plugin-launcher', '/plugins/remote-launcher']
+     command: ['cp']
+     args: ['-rf', '/remote-plugin-launcher', '/plugins/remote-launcher']
      pluginContainerCommand: ['sh', '-c']
      pluginContainerArgs: ['/plugins/remote-launcher/entrypoint.sh']
      volumes:
