@@ -51,7 +51,7 @@ spec:
      image: aandrienko/che-theia-endpoint-runtime:next
      initContainer: true
      command: ['sh', '-c']
-     args: ['cp', '/remote-plugin-laucher', '/plugins/remote-launcher']
+     args: ['cp', '/remote-plugin-launcher', '/plugins/remote-launcher']
      pluginContainerCommand: ['sh', '-c']
      pluginContainerArgs: ['/plugins/remote-launcher']
    - name: theia-ide
