@@ -47,9 +47,13 @@ spec:
         protocol: http
         discoverable: false
   containers:
-   - name: theia-init-container
+   - name: theia-remote-plugin-laucher
      image: aandrienko/che-theia-endpoint-runtime:next
      initContainer: true
+     command: ['sh', '-c']
+     args: ['cp', '/remote-plugin-laucher', '/plugins/remote-launcher']
+     pluginContainerCommand: ['sh', '-c']
+     pluginContainerArgs: ['/plugins/remote-launcher']
    - name: theia-ide
      image: aandrienko/che-theia:next     
      env:
