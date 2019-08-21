@@ -46,7 +46,7 @@ spec:
       attributes:
         protocol: http
         discoverable: false
-  chePluginPatcher:
+  pluginPatcher:
     pluginTypeMatcher: ["vs code extension", "theia plugin"]
     pluginContainerCommand: ["sh", "-c"]
     pluginContainerArgs: ["plugins/remote-launcher/entrypoint.sh"]
@@ -56,8 +56,6 @@ spec:
         initContainer: true
         command: ['cp']
         args: ['-rf', '/remote-plugin-launcher', '/plugins/remote-launcher']
-        pluginContainerCommand: ['sh', '-c']
-        pluginContainerArgs: ['/plugins/remote-launcher/entrypoint.sh']
         volumes:
           - mountPath: "/plugins"
             name: plugins
