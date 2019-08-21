@@ -46,17 +46,27 @@ spec:
       attributes:
         protocol: http
         discoverable: false
+  chePluginPatcher:
+    pluginTypeMatcher:
+      - "vs code extension"
+      - "theia plugin"
+    pluginContainerCommand:
+      - "sh"
+      - "-c"
+    pluginContainerArgs:
+      "plugins/remote-launcher/entrypoint.sh"
+    initContainers:
+      - name: theia-remote-plugin-laucher
+        image: aandrienko/che-theia-endpoint-runtime:next
+        initContainer: true
+        command: ['cp']
+        args: ['-rf', '/remote-plugin-launcher', '/plugins/remote-launcher']
+        pluginContainerCommand: ['sh', '-c']
+        pluginContainerArgs: ['/plugins/remote-launcher/entrypoint.sh']
+        volumes:
+          - mountPath: "/plugins"
+            name: plugins
   containers:
-   - name: theia-remote-plugin-laucher
-     image: aandrienko/che-theia-endpoint-runtime:next
-     initContainer: true
-     command: ['cp']
-     args: ['-rf', '/remote-plugin-launcher', '/plugins/remote-launcher']
-     pluginContainerCommand: ['sh', '-c']
-     pluginContainerArgs: ['/plugins/remote-launcher/entrypoint.sh']
-     volumes:
-         - mountPath: "/plugins"
-           name: plugins
    - name: theia-ide
      image: aandrienko/che-theia:next     
      env:
