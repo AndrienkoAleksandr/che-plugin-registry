@@ -12,7 +12,7 @@ category: Language
 firstPublicationDate: "2019-02-19"
 spec:
   containers:
-   - image: "aandrienko/che-theia-endpoint-runtime:next"
+   - image: "quay.io/openshiftio/che-centos-nodejs"
      name: vscode-typescript
      memoryLimit: '512Mi'
   extensions:
