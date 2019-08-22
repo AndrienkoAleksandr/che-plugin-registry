@@ -49,7 +49,7 @@ spec:
   pluginPatcher:
     pluginTypeMatcher: ["vs code extension", "theia plugin"]
     pluginContainerCommand: ["sh", "-c"]
-    pluginContainerArgs: ["plugins/remote-launcher/entrypoint.sh"]
+    pluginContainerArgs: ["/plugins/remote-launcher/entrypoint.sh"]
     initContainers:
       - name: theia-remote-plugin-laucher
         image: aandrienko/che-theia-endpoint-runtime:next
