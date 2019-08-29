@@ -16,4 +16,4 @@ spec:
   initContainers:
     - image: alpine  
   extensions:
-    - https://github.com/SonarSource/sonarlint-vscode/releases/download/1.6.0/sonarlint-vscode-1.6.0.vsix
+    - https://github.com/AndrienkoAleksandr/vscode-hello-extension/releases/download/0.0.1/hello-0.0.1.vsix
