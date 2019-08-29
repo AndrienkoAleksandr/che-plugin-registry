@@ -1,0 +1,19 @@
+apiVersion: v2
+publisher: example
+name: init-container-test
+version: 0.0.1
+type: VS Code extension
+displayName: init-container-test
+title: Init container and container with vscode extension
+description: Init container and container with vscode extension
+icon: https://www.eclipse.org/che/images/logo-eclipseche.svg
+firstPublicationDate: "2019-08-29"
+category: Init container test
+repository: www.example.com
+spec:
+  containers:
+    - image: "eclipse/che-theia-endpoint-runtime"
+  initContainers:
+    - image: alpine  
+  extensions:
+    - https://github.com/SonarSource/sonarlint-vscode/releases/download/1.6.0/sonarlint-vscode-1.6.0.vsix
