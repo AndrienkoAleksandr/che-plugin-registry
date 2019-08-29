@@ -1,7 +1,7 @@
 apiVersion: v2
 publisher: example
 name: init-container-test
-version: 0.0.1
+version: next
 type: VS Code extension
 displayName: init-container-test
 title: Init container and container with vscode extension
