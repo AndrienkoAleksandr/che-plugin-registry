@@ -15,8 +15,7 @@ spec:
     - name: test-init-container
       image: "eclipse/che-theia-endpoint-runtime"
       env:
-          - 
-            name: THEIA_PLUGINS
+          - name: THEIA_PLUGINS
             value: local-dir:///plugins
   initContainers:
     - image: alpine  
