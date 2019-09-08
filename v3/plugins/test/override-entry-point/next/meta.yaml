@@ -22,7 +22,7 @@ spec:
 
   initContainers:
     - name: init-container
-      image: alpine
+      image: "docker.io/ubuntu"
       env:
         - name: AAAAAAA
           value: BBBBBBBB
