@@ -29,12 +29,12 @@ spec:
       command:
         - sleep
       args:
-        - infinity
+        - 30
 
     - name: init-container2
       image: "docker.io/ubuntu"
       args:
         - sleep
-        - infinity
+        - 33
   extensions:
     - https://github.com/AndrienkoAleksandr/vscode-hello-extension/releases/download/0.0.1/hello-0.0.1.vsix
