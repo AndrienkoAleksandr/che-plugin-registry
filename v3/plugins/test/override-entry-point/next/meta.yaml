@@ -3,9 +3,9 @@ publisher: example
 name: override-container-entrypoint-test
 version: next
 type: VS Code extension
-displayName: init-container-test
+displayName: override-container-entrypoint-test
 title: Init container and container with vscode extension
-description: Init container and container with vscode extension
+description: Override container entrypoint
 icon: https://www.eclipse.org/che/images/logo-eclipseche.svg
 firstPublicationDate: "2019-08-29"
 category: Init container test
