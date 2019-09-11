@@ -1,0 +1,25 @@
+apiVersion: v2
+publisher: example
+name: init-container-test
+version: next
+type: VS Code extension
+displayName: init-container-test
+title: Init container and container with vscode extension
+description: Init container and container with vscode extension
+icon: https://www.eclipse.org/che/images/logo-eclipseche.svg
+firstPublicationDate: "2019-08-29"
+category: Init container test
+repository: www.example.com
+spec:
+  containers:
+    - name: runtime-container
+      image: "eclipse/che-theia-endpoint-runtime"
+
+  initContainers:
+    - name: init-container
+      image: docker.io/aandrienko/ls-volume-test
+      env:
+        - name: AAAAAAA
+          value: BBBBBBBB
+  extensions:
+    - https://github.com/AndrienkoAleksandr/vscode-hello-extension/releases/download/0.0.1/hello-0.0.1.vsix
