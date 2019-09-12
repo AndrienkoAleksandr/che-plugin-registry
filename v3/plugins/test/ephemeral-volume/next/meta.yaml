@@ -14,7 +14,7 @@ spec:
   containers:
     - name: runtime-container
       image: "eclipse/che-theia-endpoint-runtime"
-      volume:
+      volumes:
         - name: test
           mountPath: /test
           persistVolume: true
