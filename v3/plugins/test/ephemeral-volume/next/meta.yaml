@@ -1,6 +1,6 @@
 apiVersion: v2
 publisher: example
-name: init-container-test
+name: plugin-volume-test
 version: next
 type: VS Code extension
 displayName: init-container-test
@@ -14,7 +14,12 @@ spec:
   containers:
     - name: runtime-container
       image: "eclipse/che-theia-endpoint-runtime"
-
+      volume:
+        - name: test
+          mountPath: /test
+          persistVolume: true
+        - name: test-ephemeral
+          mountPath: /test-ephemeral
   initContainers:
     - name: init-container
       image: docker.io/aandrienko/ls-volume-test
