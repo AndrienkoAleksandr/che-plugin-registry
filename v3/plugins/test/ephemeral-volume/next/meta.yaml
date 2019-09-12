@@ -19,7 +19,7 @@ spec:
           mountPath: /test
           persistVolume: true
         - name: test-ephemeral
-          mountPath: /test-ephemeral
+          mountPath: /testEphemeral
   initContainers:
     - name: init-container
       image: docker.io/aandrienko/ls-volume-test
