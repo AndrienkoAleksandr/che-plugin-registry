@@ -15,11 +15,17 @@ spec:
     - name: runtime-container
       image: "eclipse/che-theia-endpoint-runtime"
       volumes:
+
         - name: test
           mountPath: /test
           persistVolume: true
+
+        - name: test-should-be-persisted
+          mountPath: /testShouldBePersisted
+
         - name: test-ephemeral
           mountPath: /testEphemeral
+          persistVolume: false
   initContainers:
     - name: init-container
       image: docker.io/aandrienko/ls-volume-test
