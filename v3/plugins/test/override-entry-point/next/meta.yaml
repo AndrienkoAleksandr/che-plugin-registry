@@ -18,7 +18,6 @@ spec:
         - tail
         - -f
         - /dev/null
-   
 
   initContainers:
     - name: init-container
