@@ -49,6 +49,9 @@ spec:
   initContainers:
   - name: theia-init-container
     image: aandrienko/che-theia-endpoint-runtime-binary:next
+    volumes:
+      - mountPath: "/remote-endpoint"
+        name: remote-endpoint
   containers:
    - name: theia-ide
      image: aandrienko/che-theia:next     
