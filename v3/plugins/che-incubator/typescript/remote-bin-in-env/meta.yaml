@@ -12,7 +12,7 @@ category: Language
 firstPublicationDate: "2019-02-19"
 spec:
   containers:
-   - image: "/home/user/forks/che-plugin-registry/v3/plugins/che-incubator/typescript/remote-bin-in-env"
+   - image: "aandrienko/che-theia-endpoint-runtime-binary:next"
      name: vscode-typescript
      memoryLimit: '512Mi'
   extensions:
