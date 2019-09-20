@@ -12,7 +12,7 @@ category: Language
 firstPublicationDate: "2019-02-19"
 spec:
   containers:
-   - image: "node:10.16-alpine"
+   - image: "/home/user/forks/che-plugin-registry/v3/plugins/che-incubator/typescript/remote-bin-in-env"
      name: vscode-typescript
      memoryLimit: '512Mi'
   extensions:
