@@ -12,7 +12,7 @@ category: Language
 firstPublicationDate: "2019-02-19"
 spec:
   containers:
-   - image: "aandrienko/che-theia-endpoint-runtime-binary:next"
+   - image: "aandrienko/alpine-for-ts-remote-plugin:latest"
      name: vscode-typescript
      memoryLimit: '512Mi'
   extensions:
