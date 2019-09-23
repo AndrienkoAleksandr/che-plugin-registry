@@ -13,7 +13,7 @@ repository: www.example.com
 spec:
   containers:
     - name: runtime-container
-      image: "docker.io/fedora"
+      image: "docker.io/centos"
       command:
         - tail
         - -f
@@ -21,7 +21,7 @@ spec:
 
   initContainers:
     - name: init-container
-      image: "docker.io/fedora"
+      image: "docker.io/centos"
       env:
         - name: AAAAAAA
           value: BBBBBBBB
@@ -31,7 +31,7 @@ spec:
         - 30
 
     - name: init-container2
-      image: "docker.io/fedora"
+      image: "docker.io/centos"
       args:
         - sleep
         - 33
