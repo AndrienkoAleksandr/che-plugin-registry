@@ -21,7 +21,7 @@ spec:
 
   initContainers:
     - name: init-container
-      image: "docker.io/ubuntu"
+      image: "docker.io/fedora"
       env:
         - name: AAAAAAA
           value: BBBBBBBB
@@ -31,7 +31,7 @@ spec:
         - 30
 
     - name: init-container2
-      image: "docker.io/ubuntu"
+      image: "docker.io/fedora"
       args:
         - sleep
         - 33
