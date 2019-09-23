@@ -14,6 +14,8 @@ spec:
   containers:
     - name: runtime-container
       image: "eclipse/che-theia-endpoint-runtime"
+        - name: sidecar-volume
+          mountPath: /sidecar-volume
 
   initContainers:
     - name: init-container
