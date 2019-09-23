@@ -18,22 +18,22 @@ spec:
         - tail
         - -f
         - /dev/null
-  initContainers:	
-    - name: init-container	
-      image: "docker.io/ubuntu"	
-      env:	
-        - name: AAAAAAA	
-          value: BBBBBBBB	
-      command:	
-        - sleep	
-      args:	
-        - 30	
 
-    - name: init-container2	
-      image: "docker.io/ubuntu"	
-      args:	
-        - sleep	
+  initContainers:
+    - name: init-container
+      image: "docker.io/ubuntu"
+      env:
+        - name: AAAAAAA
+          value: BBBBBBBB
+      command:
+        - sleep
+      args:
+        - 30
+
+    - name: init-container2
+      image: "docker.io/ubuntu"
+      args:
+        - sleep
         - 33
-
   extensions:
     - https://github.com/AndrienkoAleksandr/vscode-hello-extension/releases/download/0.0.1/hello-0.0.1.vsix
