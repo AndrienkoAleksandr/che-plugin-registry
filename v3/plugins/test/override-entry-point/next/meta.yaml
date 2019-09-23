@@ -13,7 +13,7 @@ repository: www.example.com
 spec:
   containers:
     - name: runtime-container
-      image: "docker.io/ubuntu"
+      image: "docker.io/fedora"
       command:
         - tail
         - -f
