@@ -22,7 +22,7 @@ spec:
         - name: AAAAAAA
           value: BBBBBBBB
       volumes:
-        name: sidecar-volume
-        mountPath: /sidecar-volume
+        - name: sidecar-volume
+          mountPath: /sidecar-volume
   extensions:
     - https://github.com/AndrienkoAleksandr/vscode-hello-extension/releases/download/0.0.1/hello-0.0.1.vsix
