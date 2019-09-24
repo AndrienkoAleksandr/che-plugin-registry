@@ -15,5 +15,9 @@ spec:
    - image: "aandrienko/alpine-for-ts-remote-plugin-without-endpoint:latest"
      name: vscode-typescript
      memoryLimit: '512Mi'
+     command:
+       - tail
+       - -f
+       - dev/null
   extensions:
   - https://github.com/che-incubator/ms-code.typescript/releases/download/v1.35.1/che-typescript-language-1.35.1.vsix
