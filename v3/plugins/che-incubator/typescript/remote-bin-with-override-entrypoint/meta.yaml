@@ -1,7 +1,7 @@
 apiVersion: v2
 publisher: che-incubator
 name: typescript
-version: remote-bin-in-env
+version: remote-bin-with-override-entrypoint
 type: VS Code extension
 displayName: Typescript
 title: Typescript language features
