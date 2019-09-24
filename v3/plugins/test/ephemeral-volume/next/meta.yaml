@@ -16,11 +16,11 @@ spec:
       image: "eclipse/che-theia-endpoint-runtime"
       volumes:
 
-        - name: testShouldBePersisted
-          mountPath: /testShouldBePersisted
+        - name: test-should-be-persisted
+          mountPath: /test-should-be-persisted
 
         - name: test-ephemeral
-          mountPath: /testShouldBeEphemeral
+          mountPath: /test-should-be-ephemeral
           ephemeral: true
 
         - name: test
