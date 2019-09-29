@@ -53,6 +53,11 @@ spec:
       - mountPath: "/remote-endpoint"
         name: remote-endpoint
         ephemeral: true
+    env:
+      - Name: PLUGIN_REMOTE_ENDPOINT_EXECUTABLE
+        Value: /remote-endpoint/plugin-remote-endpoint
+      - Name: REMOTE_ENDPOINT_VOLUME_NAME
+        Value: remote-endpoint
   containers:
    - name: theia-ide
      image: aandrienko/che-theia:next     
