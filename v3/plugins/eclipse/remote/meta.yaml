@@ -54,10 +54,10 @@ spec:
         name: remote-endpoint
         ephemeral: true
     env:
-      - Name: PLUGIN_REMOTE_ENDPOINT_EXECUTABLE
-        Value: /remote-endpoint/plugin-remote-endpoint
-      - Name: REMOTE_ENDPOINT_VOLUME_NAME
-        Value: remote-endpoint
+      - name: PLUGIN_REMOTE_ENDPOINT_EXECUTABLE
+        value: /remote-endpoint/plugin-remote-endpoint
+      - name: REMOTE_ENDPOINT_VOLUME_NAME
+        value: remote-endpoint
   containers:
    - name: theia-ide
      image: aandrienko/che-theia:next     
