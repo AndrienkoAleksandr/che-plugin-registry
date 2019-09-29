@@ -47,7 +47,7 @@ spec:
         protocol: http
         discoverable: false
   initContainers:
-  - name: theia-init-container
+  - name: remote-runtime-injector
     image: aandrienko/che-theia-endpoint-runtime-binary:next
     volumes:
       - mountPath: "/remote-endpoint"
