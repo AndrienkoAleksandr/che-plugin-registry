@@ -52,6 +52,7 @@ spec:
     volumes:
       - mountPath: "/remote-endpoint"
         name: remote-endpoint
+        ephemeral: true
   containers:
    - name: theia-ide
      image: aandrienko/che-theia:next     
