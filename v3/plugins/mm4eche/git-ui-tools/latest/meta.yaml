@@ -1,0 +1,38 @@
+apiVersion: v2
+publisher: mm4eche
+name: git-ui-tools
+version: latest
+type: Theia plugin
+displayName: Git UI Tools
+title: Eclipse Theia for Eclipse Che
+description: Eclipse Theia
+icon: https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png
+category: Git
+repository: https://github.com/mmorhun/che-theia-plugin-git-ui-tools
+firstPublicationDate: "2019-06-05"
+spec:
+  endpoints:
+   -  name: "desktop"
+      public: true
+      targetPort: 6080
+      attributes:
+        protocol: http
+        type: desktop
+        secure: true
+        cookiesAuthEnabled: true
+        discoverable: false
+  containers:
+   - name: git-ui-tools
+     image: mm4eche/che-theia-plugin-git-ui-tools:latest
+     volumes:
+         - mountPath: "/plugins"
+           name: plugins
+     mountSources: true
+     ports:
+         - exposedPort: 6080
+     memoryLimit: "512Mi"
+   - name: git-ui-tools-theia-frontend
+     image: eclipse/che-theia-endpoint-runtime:7.0.0-next
+     memoryLimit: "256Mi"
+  extensions:
+   - https://github.com/mmorhun/che-theia-plugin-git-ui-tools/releases/download/1.0.0/che_theia_plugin_git_ui_tools.theia
