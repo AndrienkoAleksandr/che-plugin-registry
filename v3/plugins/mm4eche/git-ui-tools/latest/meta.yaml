@@ -27,12 +27,13 @@ spec:
      volumes:
          - mountPath: "/plugins"
            name: plugins
+     command:
+       - sh
+       - -c
+       - /entrypoint.sh & ${PLUGIN_REMOTE_ENDPOINT_EXECUTABLE}
      mountSources: true
      ports:
          - exposedPort: 6080
      memoryLimit: "512Mi"
-   - name: git-ui-tools-theia-frontend
-     image: eclipse/che-theia-endpoint-runtime:7.0.0-next
-     memoryLimit: "256Mi"
   extensions:
    - https://github.com/mmorhun/che-theia-plugin-git-ui-tools/releases/download/1.0.0/che_theia_plugin_git_ui_tools.theia
