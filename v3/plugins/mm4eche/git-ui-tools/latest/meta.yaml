@@ -24,9 +24,6 @@ spec:
   containers:
    - name: git-ui-tools
      image: mm4eche/che-theia-plugin-git-ui-tools:latest
-     volumes:
-         - mountPath: "/plugins"
-           name: plugins
      command:
        - sh
        - -c
