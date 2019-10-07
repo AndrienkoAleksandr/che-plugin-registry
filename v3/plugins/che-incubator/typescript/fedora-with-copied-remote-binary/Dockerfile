@@ -14,4 +14,4 @@ RUN mkdir /projects \
 
 COPY --from=builder /plugin-remote-endpoint /remote-endpoint/plugin-remote-endpoint
 
-ENTRYPOINT [ /remote-endpoint/plugin-remote-endpoint ]
+CMD [ "/remote-endpoint/plugin-remote-endpoint" ]
