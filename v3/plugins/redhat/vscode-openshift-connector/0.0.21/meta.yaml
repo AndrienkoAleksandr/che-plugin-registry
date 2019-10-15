@@ -23,4 +23,6 @@ spec:
       - name: "tmp"
         mountPath: "/tmp"
   extensions:
-    - https://github.com/redhat-developer/vscode-openshift-tools/releases/download/v0.0.21/openshift-connector-0.0.21-228.vsix
+    - https://github.com/AndrienkoAleksandr/che-plugin-registry/releases/download/oc-conntector-binaries/ms_kubernetes_tools_vscode_kubernetes_tools.vsix
+    - https://github.com/AndrienkoAleksandr/che-plugin-registry/releases/download/oc-conntector-binaries/redhat_vscode_openshift_connector.vsix
+    - https://github.com/AndrienkoAleksandr/che-plugin-registry/releases/download/oc-conntector-binaries/redhat_vscode_yaml.vsix
