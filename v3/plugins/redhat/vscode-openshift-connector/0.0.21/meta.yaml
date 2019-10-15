@@ -4,7 +4,7 @@ name: vscode-openshift-connector
 version: 0.0.21
 type: VS Code extension
 displayName: OpenShift Connector
-title: OpenShift Connector
+title: OpenShift Connector!
 description: Interacting with Red Hat OpenShift clusters and providing a streamlined developer experience using Eclipse Che
 icon: https://www.eclipse.org/che/images/logo-eclipseche.svg
 repository: https://github.com/redhat-developer/vscode-openshift-tools
