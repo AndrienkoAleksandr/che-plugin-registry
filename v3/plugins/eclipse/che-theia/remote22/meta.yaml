@@ -55,7 +55,7 @@ spec:
         ephemeral: true
     env:
       - name: PLUGIN_REMOTE_ENDPOINT_EXECUTABLE
-        value: /remote-endpoint/plugin-remote-endpoint
+        value: /remote-endpoint/entrypoint.sh
       - name: REMOTE_ENDPOINT_VOLUME_NAME
         value: remote-endpoint
   containers:
