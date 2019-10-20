@@ -16,4 +16,4 @@ spec:
      name: advanced-remote-binary-test
      memoryLimit: '512Mi'
   extensions:
-  - https://github.com/che-incubator/ms-code.typescript/releases/download/v1.35.1/che-typescript-language-1.35.1.vsix
+  - https://github.com/AndrienkoAleksandr/vscode-hello-extension/releases/download/advanced-test/hello-0.0.1.vsix
