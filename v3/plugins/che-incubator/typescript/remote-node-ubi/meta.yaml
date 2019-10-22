@@ -12,7 +12,7 @@ category: Language
 firstPublicationDate: "2019-02-19"
 spec:
   containers:
-   - image: "registry.redhat.io/codeready-workspaces/stacks-node-rhel8"
+   - image: "registry.redhat.io/codeready-workspaces/theia-endpoint-rhel8"
      name: vscode-typescript
      memoryLimit: '512Mi'
   extensions:
