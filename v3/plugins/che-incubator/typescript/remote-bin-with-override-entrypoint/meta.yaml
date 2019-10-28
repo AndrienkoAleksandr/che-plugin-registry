@@ -13,13 +13,13 @@ type: "VS Code extension"
 version: remote-bin-with-override-entrypoint
 spec:
   containers:
-    command:
-      - sh
-      - -c
-    args:
-      - ${PLUGIN_REMOTE_ENDPOINT_EXECUTABLE}
-    image: "aandrienko/fedora-for-ts-remote-plugin-without-endpoint:latest"
-    memoryLimit: 512Mi
-    name: vscode-typescript
+    - image: "aandrienko/fedora-for-ts-remote-plugin-without-endpoint:latest"
+      memoryLimit: 512Mi
+      name: vscode-typescript
+      command:
+        - sh
+        - -c
+      args:
+        - ${PLUGIN_REMOTE_ENDPOINT_EXECUTABLE}
   extensions: 
     - "https://github.com/che-incubator/ms-code.typescript/releases/download/v1.35.1/che-typescript-language-1.35.1.vsix"
