@@ -12,7 +12,7 @@ category: Other
 firstPublicationDate: "2019-05-22"
 spec:
   containers:
-    - image: "docker.io/tnemov/remote-plugin-openshift-connector-0.0.21:ubi"
+    - image: "aandrienko/oc-connector"
       name: "vscode-openshift-connector"
       memoryLimit: "512Mi"
       command: 
