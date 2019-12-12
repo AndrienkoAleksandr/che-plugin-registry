@@ -20,8 +20,8 @@ spec:
         path: "/static"
         type: ide
         discoverable: false
-        secure: true
-        cookiesAuthEnabled: true
+        secure: false
+        cookiesAuthEnabled: false
   containers:
    - name: che-machine-exec
      image: "docker.io/aandrienko/che-machine-exec:next"
