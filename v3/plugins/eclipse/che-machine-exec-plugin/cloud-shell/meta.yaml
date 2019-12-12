@@ -24,6 +24,6 @@ spec:
         cookiesAuthEnabled: false
   containers:
    - name: che-machine-exec
-     image: "docker.io/aandrienko/che-machine-exec:next"
+     image: "aandrienko/che-machine-exec:cloud-shell"
      ports:
        - exposedPort: 4444
