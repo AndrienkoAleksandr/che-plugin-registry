@@ -23,7 +23,6 @@ spec:
         secure: true
         cookiesAuthEnabled: true
         unique: true
-  endpoints:
    -  name: "cloud-shell"
       public: true
       targetPort: 4444
