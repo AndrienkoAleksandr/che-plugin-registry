@@ -32,6 +32,7 @@ spec:
         discoverable: false
         secure: false
         cookiesAuthEnabled: false
+        unique: true
   containers:
    - name: che-machine-exec
      image: "docker.io/aandrienko/che-machine-exec:next"
