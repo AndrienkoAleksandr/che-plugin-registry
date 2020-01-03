@@ -28,7 +28,7 @@ spec:
       targetPort: 4444
       attributes:
         protocol: http
-        type: cloud-shell
+        type: terminal
         path: /static
         discoverable: false
         secure: true
