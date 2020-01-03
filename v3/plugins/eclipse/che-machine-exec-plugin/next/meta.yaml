@@ -17,7 +17,7 @@ spec:
       public: true
       targetPort: 4444
       attributes:
-        protocol: ws
+        protocol: http
         type: terminal
         discoverable: false
         secure: true
