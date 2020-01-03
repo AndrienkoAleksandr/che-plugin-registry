@@ -22,6 +22,7 @@ spec:
         discoverable: false
         secure: true
         cookiesAuthEnabled: true
+        unique: true
   endpoints:
    -  name: "cloud-shell"
       public: true
