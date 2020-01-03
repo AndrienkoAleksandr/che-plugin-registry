@@ -28,10 +28,11 @@ spec:
       targetPort: 4444
       attributes:
         protocol: http
+        type: terminal
         path: /static
         discoverable: false
-        secure: false
-        cookiesAuthEnabled: false
+        secure: true
+        cookiesAuthEnabled: true
         unique: true
   containers:
    - name: che-machine-exec
