@@ -22,6 +22,16 @@ spec:
         discoverable: false
         secure: true
         cookiesAuthEnabled: true
+  endpoints:
+   -  name: "terminal-in-the-separeated-tab"
+      public: true
+      targetPort: 4444
+      attributes:
+        protocol: http
+        path: /static
+        discoverable: false
+        secure: true
+        cookiesAuthEnabled: true
   containers:
    - name: che-machine-exec
      image: "docker.io/aandrienko/che-machine-exec:next"
