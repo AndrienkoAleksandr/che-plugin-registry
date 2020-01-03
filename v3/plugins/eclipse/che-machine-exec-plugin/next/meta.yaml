@@ -22,7 +22,6 @@ spec:
         discoverable: false
         secure: true
         cookiesAuthEnabled: true
-        unique: true
    -  name: "cloud-shell"
       public: true
       targetPort: 4444
