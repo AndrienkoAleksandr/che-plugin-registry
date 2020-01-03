@@ -23,7 +23,7 @@ spec:
         secure: true
         cookiesAuthEnabled: true
   endpoints:
-   -  name: "terminal-in-the-separeated-tab"
+   -  name: "cloud-shell"
       public: true
       targetPort: 4444
       attributes:
