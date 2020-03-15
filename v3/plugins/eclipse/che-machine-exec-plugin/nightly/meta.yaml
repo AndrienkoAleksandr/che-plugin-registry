@@ -28,3 +28,6 @@ spec:
      ports:
        - exposedPort: 4444
      command: ['/go/bin/che-machine-exec', '--static', '/cloud-shell', '--url', '127.0.0.1:4444']
+     env:
+       - name: "LOG_LEVEL"
+         value: "DEBUG"
