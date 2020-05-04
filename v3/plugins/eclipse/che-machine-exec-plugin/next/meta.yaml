@@ -35,6 +35,6 @@ spec:
         unique: true
   containers:
    - name: che-machine-exec
-     image: "docker.io/aandrienko/che-machine-exec:next"
+     image: "docker.io/aandrienko/che-machine-exec:go-mod"
      ports:
        - exposedPort: 4444
