@@ -11,5 +11,9 @@ repository: https://github.com/bash-lsp/bash-language-server
 category: Other
 firstPublicationDate: '2020-07-4'
 spec:
+  containers:
+    - image: "docker.io/aandrienko/shellcheck"
+      name: shellcheck
+      memoryLimit: '128Mi'
   extensions:
     - https://open-vsx.org/api/mads-hartmann/bash-ide-vscode/1.10.2/file/mads-hartmann.bash-ide-vscode-1.10.2.vsix
