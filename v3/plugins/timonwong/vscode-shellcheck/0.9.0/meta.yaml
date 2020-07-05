@@ -12,7 +12,7 @@ category: Language
 firstPublicationDate: '2020-07-05'
 spec:
   containers:
-  - image: "docker.io/aandrienko/shellcheck"
+  - image: "docker.io/aandrienko/shellcheck:latest"
     name: shellcheck
     memoryLimit: '128Mi'
   extensions:
