@@ -104,7 +104,7 @@ spec:
           mountPath: /plugins
         - name: theia-local
           mountPath: /home/theia/.theia
-          - name: che-machine-exec
+    - name: che-machine-exec
       image: 'docker.io/aandrienko/che-machine-exec:nightly'
       ports:
         - exposedPort: 3333
