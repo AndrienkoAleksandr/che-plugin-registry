@@ -89,7 +89,7 @@ spec:
          - exposedPort: 13133
      memoryLimit: "512M"
    - name: che-machine-exec
-     image: 'docker.io/aandrienko/che-machine-exec:nightly'
+     image: 'quay.io/aandriienko/che-machine-exec:nightly'
      ports:
          - exposedPort: 3333
      command:
