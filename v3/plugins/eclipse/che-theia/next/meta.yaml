@@ -67,7 +67,7 @@ spec:
         cookiesAuthEnabled: true
   containers:
    - name: theia-ide
-     image: "quay.io/eclipse/che-theia:next"
+     image: "quay.io/aandriienko/che-theia:next"
      env:
          - name: THEIA_PLUGINS
            value: local-dir:///plugins
@@ -98,7 +98,7 @@ spec:
          - '127.0.0.1:3333'
   initContainers:
   - name: remote-runtime-injector
-    image: "quay.io/eclipse/che-theia-endpoint-runtime-binary:next"
+    image: "quay.io/aandriienko/che-theia-endpoint-runtime-binary:next"
     volumes:
       - mountPath: "/remote-endpoint"
         name: remote-endpoint
